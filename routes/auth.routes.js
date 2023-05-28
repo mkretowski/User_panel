@@ -12,7 +12,7 @@ router.get(
   }
 );
 //doesn't work with <a> which uses GET method
-router.post('/logout', (req, res, next) => {
+router.get('/logout', (req, res, next) => {
   req.logout((err) => {
     if (err) {
       return next(err);
