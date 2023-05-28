@@ -11,7 +11,7 @@ router.get(
     res.redirect('/user/logged');
   }
 );
-//doesn't work with <a> which uses GET method
+
 router.get('/logout', (req, res, next) => {
   req.logout((err) => {
     if (err) {
